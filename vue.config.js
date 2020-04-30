@@ -11,5 +11,7 @@ module.exports = {
             .set('layout',resolve('src/layout'))
             .set('base',resolve('src/base'))
             .set('static',resolve('src/static'))
+            .set('router',resolve('src/router'))
+            .set('view',resolve('src/views'))
     }
 }
