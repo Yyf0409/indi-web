@@ -26,6 +26,7 @@ export default {
   methods:{
     loadPageData: function() {
       // axios 请求页面数据 .then 中将状态值修改  this.isLoading = false
+      this.isLoading=false;
     },
   }
 }
@@ -37,6 +38,6 @@ export default {
     width: 100%;
     height: 100vh;
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-attachment: scroll;
   }
 </style>
