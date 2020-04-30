@@ -14,6 +14,6 @@
         width: 100vw;
         height: 100vh;
         z-index: 1000;
-        background: url('~assets/images/loader.gif');
+        background: url('~assets/images/loader.gif') center no-repeat;
     }
 </style>
