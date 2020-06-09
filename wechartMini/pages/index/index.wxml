@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="topTabSwiper">
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>豆瓣电影</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>掘金</view>
+    <view class='tab  {{currentData == 2 ? "tabBorer" : ""}}'  data-current = "2" bindtap='checkCurrent'>微博</view>
+    <view class='tab  {{currentData == 3 ? "tabBorer" : ""}}'  data-current = "3" bindtap='checkCurrent'>知乎</view>
+</view>
+
+<scroll-view>
+     <view wx:for="{{douban}}" wx:key="douban">
+         <view><image src="{{item.images.medium}}"></image></view>
+         <view>{{item.title}}</view>
+         <view>类型：{{item.genres}}</view>
+    </view>
+</scroll-view>
+
